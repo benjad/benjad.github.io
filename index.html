@@ -14,7 +14,12 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+   {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+    <h4 class="post-link">
+      <a href="{{ post.url }}">
+        seguir leyendo..
+      </a>
+    </h4>
   </div>
   {% endfor %}
 </div>
@@ -27,11 +32,11 @@ title: Home
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
+      <a class="pagination-item newer" href="/">Recientes</a>
     {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item Newer" href="/page{{paginator.previous_page}}">Recientes</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">Newer</span>
+    <span class="pagination-item newer">Recientes</span>
   {% endif %}
 </div>

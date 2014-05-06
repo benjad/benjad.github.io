@@ -1,21 +1,22 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+pygments:         false
+rouge:            true
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            Poole
+title:            Benja Duran 
 tagline:          The Jekyll Butler
 description:      Base theme for Jekyll themes by @mdo.
-url:              http://getpoole.com
+url:              http://localhost:4000
 
 author:
   name:           Mark Otto
   url:            https://twitter.com/mdo
 
-paginate:         1
+paginate:         3
 
 # Custom vars
 version:          1.0.0
