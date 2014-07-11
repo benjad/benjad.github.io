@@ -1,12 +1,12 @@
 ---
 layout: page
-title: About
+title: Quien soy?
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Soy Ingeniero civil  en obras civiles, interesado en  la programacion y el desarrollo web.
+Este blog parte con la idea de registrar aprendizajes y projectos en mision personal de desarrolar aplicaiones web.
 
+En la parte tecnica , este blog fue creado con la ayuda de [jekyll](http://jekyllrb.com) y [Poole](https://github.com/poole), claro que con algunas modificaciones.
 In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
 
 There are currently two themes built on Poole:

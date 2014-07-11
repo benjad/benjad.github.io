@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+  {% include analytics.html %}
   {% include head.html %}
 
   <body>
@@ -10,9 +10,15 @@
     <div class="container content">
         <div class="masthead">
         <h3 class="masthead-title">
-          <img src="{{ site.url }}/public/startup.png" alt="some_text" id="logo">
-          <a href="/" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
+          <img src="/public/startup.png" alt="some_text" id="logo">
+          <a href="/" title="Home">{{ site.title  }}</a>
+              <div class="navbar-ele">
+              {% for page in site.pages_list %}
+                &nbsp;&nbsp;&nbsp;
+                
+              <a href="{{ page[1]  }}">{{ page[0] }}</a>
+            {% endfor %}
+            </div>
         </h3>
       </div>
        </div>
