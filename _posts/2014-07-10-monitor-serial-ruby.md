@@ -33,7 +33,8 @@ while(true) do
 
 El código es bien sencillo y bastante directo. El programa genera un archivo de texto  llamado *log.txt*, con los datos provenientes del puerto de serie.
 El registro de los datos se hace desde que se inicia el programa hasta su cierre.
-Para que funcione correctamente se debe escribir el numero correcto del puerto del [Arduino](http://www.arduino.cc/) en *port\_str* y la frecuencia en *baud\_rate*.
-Para el caso del puerto se debe restar 1 al número COM de puerto, es decir, si es COM3 se debe poner 2 en *port\_str* y listo.
+
+
+Para que funcione correctamente se debe escribir el numero correcto del puerto del [Arduino](http://www.arduino.cc/) en *port\_str* y la frecuencia en *baud\_rate*. Para el caso del puerto se debe restar 1 al número COM de puerto, es decir, si es COM3 se debe poner 2 en *port\_str* y listo.
 
 Cualquier consulta o comentario más abajo !
