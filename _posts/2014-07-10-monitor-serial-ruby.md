@@ -21,7 +21,7 @@ baud_rate = 9600
 data_bits = 8
 stop_bits = 1
 parity    = SerialPort::NONE
- trap("INT") { puts "Shutting down."; exit}
+ trap("INT") { puts "Apagando."; exit}
 target = File.new(filename, 'w')
 sp = SerialPort.new(port_str, baud_rate, data_bits, stop_bits, parity)
 while(true) do
@@ -32,7 +32,8 @@ while(true) do
 {% endhighlight %}
 
 El código es bien sencillo y bastante directo. El programa genera un archivo de texto  llamado *log.txt*, con los datos provenientes del puerto de serie.
- Solo se debe escribir el numero correcto del puerto del [Arduino](http://www.arduino.cc/) en *port\_str* y la frecuencia en *baud\_rate*.
-Para el caso del puerto se debe restar 1 al número COM de puerto, es decir, si es COM3 se debe poner 2 en *port\_str* listo.
+El registro de los datos se hace desde que se inicia el programa hasta su cierre.
+Para que funcione correctamente se debe escribir el numero correcto del puerto del [Arduino](http://www.arduino.cc/) en *port\_str* y la frecuencia en *baud\_rate*.
+Para el caso del puerto se debe restar 1 al número COM de puerto, es decir, si es COM3 se debe poner 2 en *port\_str* y listo.
 
 Cualquier consulta o comentario más abajo !
