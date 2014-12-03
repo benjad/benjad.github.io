@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Guardando datos del puerto serie 
+title: Guardando datos del puerto serial 
+description: Guardar datos provenientes del puerto serial del arduino con ruby
 comments: true
 ---
 
 
 
-Jugando con mi [Arduino](http://www.arduino.cc/) UNO y algunos sensores, me vi en la necesidad de guardar los datos proveniente del puerto serie. Y
+Jugando con mi [Arduino](http://www.arduino.cc/) UNO y algunos sensores, me vi en la necesidad de guardar los datos proveniente del puerto serial. Y
 aunque existen algunos programas disponibles en la internet pensé que sería un buen ejercicio crearlo desde 0 en  [Ruby](https://www.ruby-lang.org/es/).
 
 ##El Código
@@ -31,7 +32,7 @@ while(true) do
  end
 {% endhighlight %}
 
-El código es bien sencillo y bastante directo. El programa genera un archivo de texto  llamado *log.txt*, con los datos provenientes del puerto de serie.
+El código es bien sencillo y bastante directo. El programa genera un archivo de texto  llamado *log.txt*, con los datos provenientes del puerto de serial.
 El registro de los datos se hace desde que se inicia el programa hasta su cierre.
 
 
