@@ -26,4 +26,4 @@ github:
  # This is the list of pages to incldue in the header of the website.
 pages_list:       {'Acerca':'/about','Archivo':'/archive'}
 
-excerpt_separator: ""
+
