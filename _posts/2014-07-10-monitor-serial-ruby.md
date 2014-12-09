@@ -2,7 +2,7 @@
 layout: post
 title: Guardando datos del puerto serial 
 comments: true
-description: Guardar datos provenientes del puerto serial del arduino con ruby
+
 ---
 
 Jugando con mi [Arduino](http://www.arduino.cc/) UNO y algunos sensores, me vi en la necesidad de guardar los datos proveniente del puerto serial. Y
@@ -10,7 +10,7 @@ aunque existen algunos programas disponibles en la internet pensé que sería un
 
 ##El Código
 
-<!-- {% highlight ruby  %}
+{% highlight ruby  %}
 require 'serialport'
 
 filename = 'log.txt'
@@ -28,7 +28,7 @@ while(true) do
    print message
   target.write(message)
  end
-{% endhighlight %} -->
+{% endhighlight %}
 
 El código es bien sencillo y bastante directo. El programa genera un archivo de texto  llamado *log.txt*, con los datos provenientes del puerto de serial.
 El registro de los datos se hace desde que se inicia el programa hasta su cierre.
