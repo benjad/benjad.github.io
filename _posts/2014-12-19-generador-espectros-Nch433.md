@@ -8,7 +8,7 @@ description: Generar espectros de diseño segun Nch 433
 Hace un tiempo cree este programa en[ C#](http://es.wikipedia.org/wiki/C_Sharp) y queria compartirlo.
 Bueno lo que hace es generar los espectros de diseño segun la norma chilena Nch 433, ocupando los tipos de suelo del [decreto 61 ](http://www.leychile.cl/Navegar?idNorma=1034101).
 
-![My helpful screenshot]({{ site.url }}/assets/nch433cap.jpg)
+![My helpful screenshot]({{ site.url }}assets/nch433cap.jpg)
 
 
 
@@ -28,7 +28,7 @@ Posteriormente, se debe  apretar el botón **Generar espectros** y luego **Gener
 
 
 ## Descarga
-EL programa  se puede descargar desde [aquí]({{ site.url }}/assets/EspectrosNch433.zip),
+EL programa  se puede descargar desde [aquí]({{ site.url }}assets/EspectrosNch433.zip),
 y si quieres ver o bajar el código fuente puedes verlo en [GitHub](https://github.com) haciendo click [aquí](https://github.com/benjad/espectrosNch433).
 
 Cualquier consulta o comentario más abajo !
