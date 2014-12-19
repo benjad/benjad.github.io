@@ -1,6 +1,6 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:       pygments
+# markdown:         redcarpet
+# highlighter:       pygments
 
 # Permalinks
 permalink:        pretty
@@ -27,5 +27,3 @@ github:
 pages_list:       {'Acerca':'/about','Archivo':'/archive'}
 
 
-safe: true
-lsi: false
