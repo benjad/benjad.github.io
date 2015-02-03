@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conexión inalámbrica de un Arduino con el APC220
+title: Conexión inalámbrica de Arduino  Uno con el APC220
 comments: true
 description: conectar arduino inalámbricamente con apc220
 ---
@@ -21,7 +21,7 @@ Se deben conectar los APC220 al PC y verificar que todos los valores sean iguale
 
 ## Código de Arduino
 
-El siguiente paso es cargar el [Arduino](http://www.arduino.cc) Uno  con el siguiente código que nos permitirá ver  si todo funciona bien.
+El siguiente paso es cargar el [Arduino](http://www.arduino.cc) Uno  con el siguiente código, que nos permitirá probar la conexión inalámbrica desde el PC.
 
 {% highlight c++  %}
 int val = 0;
@@ -48,7 +48,7 @@ void loop()
 }
 {% endhighlight %}
 
-Una vez listo esto ya se puede conectar un módulo al pc y el otro al [Arduino](http://www.arduino.cc)
+Una vez listo esto ya se puede conectar un módulo al pc y el otro al [Arduino](http://www.arduino.cc) .
 
 ![conexion](/assets/arduino-apc220.jpg)
 
