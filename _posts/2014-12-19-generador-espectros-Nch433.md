@@ -6,7 +6,7 @@ description: Generar espectros de diseño segun Nch 433
 ---
 
 Hace un tiempo cree este programa en[ C#](http://es.wikipedia.org/wiki/C_Sharp) y queria compartirlo.
-Bueno lo que hace es generar los espectros de diseño segun la norma chilena Nch 433, ocupando los tipos de suelo del [decreto 61 ](http://www.leychile.cl/Navegar?idNorma=1034101).
+Lo que hace es generar los espectros de diseño segun la norma chilena Nch 433, ocupando los tipos de suelo del [decreto 61 ](http://www.leychile.cl/Navegar?idNorma=1034101). Los espectros resultantes  son archivos de texto, los cuales  pueden ser ingresados en un software de diseño estructural como ETABS o SAP2000.
 
 ![My helpful screenshot](/assets/nch433cap.JPG)
 
