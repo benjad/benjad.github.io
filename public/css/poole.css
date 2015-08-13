@@ -104,14 +104,19 @@ h4, h5, h6 {
 .navbar {
   width: 100%;
   min-width: 100%;
-  background: #F4E7CC;
+background: -webkit-linear-gradient(#C8E8F3, #FFF); 
+background:    -moz-linear-gradient(#C8E8F3, #FFF); 
+background:     -ms-linear-gradient(#C8E8F3, #FFF); 
+background:      -o-linear-gradient(#C8E8F3, #FFF); 
+background:         linear-gradient(#C8E8F3, #FFF);
    -o-transition:.8s;
   -ms-transition:.8s;
   -moz-transition:.8s;
   -webkit-transition:.8s;
+ 
   }
   .navbar:hover {
-   background: #FAF3E3;
+
   }
 
 .navbar-ele {
@@ -136,8 +141,9 @@ h4, h5, h6 {
   }  
   
 #title {
- font-size: 1.7rem;
- font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 7px;
  }
 
 /* Body text */
@@ -354,7 +360,7 @@ tbody tr:nth-child(odd) th {
   color: #303030;
 }
 .masthead-title a {
-  color: #303030; 
+  color: rgba(0, 0, 0, 0.56);
 }
 .masthead-title small {
   font-size: 75%;
