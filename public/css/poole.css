@@ -104,21 +104,21 @@ h4, h5, h6 {
 .navbar {
   width: 100%;
   min-width: 100%;
-  background: #9595D5;
+  background: #F4E7CC;
    -o-transition:.8s;
   -ms-transition:.8s;
   -moz-transition:.8s;
   -webkit-transition:.8s;
   }
   .navbar:hover {
-   background: #585E97;
+   background: #FAF3E3;
   }
 
 .navbar-ele {
-  display: inline;
-   font-size: 80%;
+  display: inline-block ;
+   font-size: 1.25rem;
   font-weight: 100;s
-  color: #c0c0c0;
+  color: #F4E7CC;
   letter-spacing: 0;
     }
 
@@ -130,11 +130,15 @@ h4, h5, h6 {
   display: inline;
   max-width: 3rem;
   height: auto;
-  margin: 0;
+  margin: -10px 0 0 0 ;
   border-radius: 0.1rem;
   vertical-align: middle;
-
   }  
+  
+#title {
+ font-size: 1.7rem;
+ font-weight: bold;
+ }
 
 /* Body text */
 p {
