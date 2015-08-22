@@ -13,7 +13,7 @@ En [sismologia.cl](http://sismologia.cl/) se pueden revisar todos los sismos ocu
 ##La base de datos
 El [web crawler](https://es.wikipedia.org/wiki/Araña_web) crea la base de datos en un archivo .csv (editable en excel), donde en cada fila se ubica un sismo con su info  separado en 6 columnas (Fecha local, Fecha UTC, latitud, longitud, magnitud, referencia geografica).
 
-El archivo final, con los sismos desde el 01/01/2003 hasta el 20/08/2015, puedes  [bajarlo aquí](assets/sismos.csv).
+El archivo final, con los sismos desde el 01/01/2003 hasta el 20/08/2015, puedes  [bajarlo aquí](/assets/sismos.csv).
 
 
 
