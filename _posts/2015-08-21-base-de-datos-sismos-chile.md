@@ -20,7 +20,7 @@ El archivo final, con los sismos desde el 01/01/2003 hasta el 20/08/2015, puedes
 ## Código del web crawler
 El codigo del programa esta escrito en [Ruby](https://www.ruby-lang.org/es/) y es el siguiente:
 
-{% highlight ruby  %}
+{% highlight python  %}
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
@@ -48,7 +48,7 @@ for i in 1..days do # comienza la recopilacion de datos
 
 		rows = page.css('tbody tr')
 			rows[1..-2].each do |row| 
-				csv <<row.css('td').map{ |cell| (cell).text.gsub(/,/,'')} # se guarda cada fila en el archivo .csv
+			csv <<row.css('td').map{ |cell| (cell).text.gsub(/,/,'')} 
 			end
 
 		date_ini +=1 #avanza 1 dia
