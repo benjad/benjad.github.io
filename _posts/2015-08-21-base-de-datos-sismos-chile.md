@@ -27,17 +27,17 @@ require 'open-uri'
 require 'csv'
 require 'date'
 
-csv = CSV.open("sismos.csv", 'w',{:col_sep => ",", :quote_char => '\'', :force_quotes => false}) # se crea el archivo .csv
+csv = CSV.open("sismos.csv", 'w',{:col_sep => ",", :quote_char => '\'',  :row_sep =>:auto, :force_quotes => false}) # se crea el archivo .csv
 
 BASE_URL = 'http://www.sismologia.cl/events/listados'
 
 date_ini =Date.new(2003,1,01) # fecha inicio del registro
-date_end =Date.new(2015,8,14) # fecha final del registro
+date_end =Date.new(2015,8,20) # fecha final del registro
 days = (date_end - date_ini).to_int # dias de datos a recopilar
 
 
 
-for i in 1..days do # comienza pa recopilacion de datos
+for i in 1..days do # comienza la recopilacion de datos
 	BASE_DIR = "/#{date_ini.strftime("%Y")}/#{date_ini.strftime("%m")}/#{date_ini.strftime("%Y%m")}" 
 		begin
 		page = Nokogiri::HTML(open(BASE_URL+BASE_DIR + date_ini.strftime("%d") + '.html'))
@@ -48,9 +48,7 @@ for i in 1..days do # comienza pa recopilacion de datos
 
 		rows = page.css('tbody tr')
 			rows[1..-2].each do |row| 
-				tarray = [] 
-			 	tarray = row.css('td').map{ |cell| cell.text}	 
-				csv <<tarray
+				csv <<row.css('td').map{ |cell| (cell).text.gsub(/,/,'')} # se guarda cada fila en el archivo .csv
 			end
 
 		date_ini +=1 #avanza 1 dia
