@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conexión de arduino con acelerometro ADXL335 
+title: Conexión de Arduino Uno con acelerometro ADXL335 
 comments: true
 description: conectar arduino con acelerometro
 ---
