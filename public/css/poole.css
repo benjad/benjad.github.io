@@ -104,11 +104,11 @@ h4, h5, h6 {
 .navbar {
   width: 100%;
   min-width: 100%;
-background: -webkit-linear-gradient(#C8E8F3, #FFF); 
-background:    -moz-linear-gradient(#C8E8F3, #FFF); 
-background:     -ms-linear-gradient(#C8E8F3, #FFF); 
-background:      -o-linear-gradient(#C8E8F3, #FFF); 
-background:         linear-gradient(#C8E8F3, #FFF);
+background: -webkit-linear-gradient(#e2eaed, #FFF); 
+background:    -moz-linear-gradient(#e2eaed, #FFF); 
+background:     -ms-linear-gradient(#e2eaed, #FFF); 
+background:      -o-linear-gradient(#e2eaed, #FFF); 
+background:         linear-gradient(#e2eaed, #FFF);
    -o-transition:.8s;
   -ms-transition:.8s;
   -moz-transition:.8s;
@@ -144,6 +144,7 @@ background:         linear-gradient(#C8E8F3, #FFF);
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 7px;
+  padding-left: 1.4rem;
  }
 
 /* Body text */
@@ -352,6 +353,7 @@ tbody tr:nth-child(odd) th {
  text-align:  left;
  margin-left: auto;
  letter-spacing: 0.2rem;
+ border-bottom: 1px solid #dbdbdb;
  
 }
 .masthead-title {
