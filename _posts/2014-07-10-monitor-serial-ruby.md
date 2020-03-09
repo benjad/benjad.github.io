@@ -8,7 +8,7 @@ description: Guardar datos provenientes del puerto serial del arduino con ruby
 Jugando con mi [Arduino](http://www.arduino.cc/) UNO y algunos sensores, me vi en la necesidad de guardar los datos proveniente del puerto serial. Y
 aunque existen algunos programas disponibles en la internet pensé que sería un buen ejercicio crearlo desde 0 en  [Ruby](https://www.ruby-lang.org/es/).
 
-##El Código
+## El Código
 
 {% highlight ruby  %}
 require 'serialport'
