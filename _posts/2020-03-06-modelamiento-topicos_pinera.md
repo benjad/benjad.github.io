@@ -206,36 +206,39 @@ for n in n_topics :
 Los resultados son los siguientes:
 
 #### modelo con 5 tópicos
+
 |tópico |||||||
 |:------:| :------:|:------:|:------:|:------:|:------:|:------:|
-|n° 1|aguar|mayor|seguridad|querer|orden|ciudadano|
-|n° 2|derecho|humano|derecho humano|querer|año|día|
-|n° 3|querer|acordar|violencia|día|derecho|social|
-|n° 4|mayor|salud|pensionar|familia|querer|nuevo|
-|n° 5|querer|mayor|día|ley|saber|esforzar|
+|n° 1|aguar|mayor|seguridad|querer|orden|ciudadano
+|n° 2|derecho|humano|derecho humano|querer|año|día
+|n° 3|querer|acordar|violencia|día|derecho|social
+|n° 4|mayor|salud|pensionar|familia|querer|nuevo
+|n° 5|querer|mayor|día|ley|saber|esforzar
 
 
 #### modelo con 6 tópicos
+
 |tópico |||||||
 |:------:| :------:|:------:|:------:|:------:|:------:|:------:|
-|n° 1|aguar|querer|orden|seguridad|mayor|policía|
-|n° 2|derecho|humano|derecho humano|año|querer|respetar|
-|n° 3|querer|día|escuela|aviación|forzar|sentir|
-|n° 4|pensionar|mayor|querer|vida|familia|mejorar|
-|n° 5|querer|ley|día|mayor|carabinero|saber|
-|n° 6|derecho|querer|día|nuevo|salud|mejor|
+|n° 1|aguar|querer|orden|seguridad|mayor|policía
+|n° 2|derecho|humano|derecho humano|año|querer|respetar
+|n° 3|querer|día|escuela|aviación|forzar|sentir
+|n° 4|pensionar|mayor|querer|vida|familia|mejorar
+|n° 5|querer|ley|día|mayor|carabinero|saber
+|n° 6|derecho|querer|día|nuevo|salud|mejor
 
 
 #### modelo con 7 tópicos
-|tópico ||||||||
-|:------:| :------:|:------:|:------:|:------:|:------:|:------:|:------:|
-|n° 1|mayor|querer|orden|social|seguridad|derecho|
-|n° 2|derecho|humano|querer|derecho humano|aguar|día|
-|n° 3|significar|acordar|temor|justicia|chile|violencia|
-|n° 4|vivienda|familia|riesgo|querer|agradecer|lugar|
-|n° 5|carabinero|día|empresa|ley|pyme|saber|
-|n° 6|querer|día|derecho|nuevo|cumplir|policía|
-|n° 7|mayor|pensionar|mejorar|agenda|social|adulto|
+
+|tópico |||||||
+|:------:| :------:|:------:|:------:|:------:|:------:|:------:|
+|n° 1|mayor|querer|orden|social|seguridad|derecho
+|n° 2|derecho|humano|querer|derecho humano|aguar|día
+|n° 3|significar|acordar|temor|justicia|chile|violencia
+|n° 4|vivienda|familia|riesgo|querer|agradecer|lugar
+|n° 5|carabinero|día|empresa|ley|pyme|saber
+|n° 6|querer|día|derecho|nuevo|cumplir|policía
+|n° 7|mayor|pensionar|mejorar|agenda|social|adulto
 
 Si revisamos las 3 tablas (si se, son hartas palabras) no parece haber un modelo claramente mejor y aunque algunos tópicos parecen ser mas coherentes, la mayoría no cumple muy bien el objetivo.
 
@@ -288,6 +291,7 @@ for n in n_topics :
 Los resultados son los siguientes:
 
 #### modelo con 5 tópicos
+
 |tópico ||||||
 |:------:| :------:|:------:|:------:|:------:|:------:|
 |n°1|derecho|agenda|año|social|acordar|constitución|
@@ -297,6 +301,7 @@ Los resultados son los siguientes:
 |n°5|querer|día|vida|carabinero|ley|aguar|
 
 #### modelo con 6 tópicos
+
 |tópico |||||||
 |:------:| :------:|:------:|:------:|:------:|:------:|:------:|
 |n°1|agenda|derecho|social|año|violencia|acordar|
@@ -307,15 +312,16 @@ Los resultados son los siguientes:
 |n°6|derecho|constitución|principiar|acordar|oportunidad|político|
 
 #### modelo con 7 tópicos
+
 |tópico |||||||
-|:------:| :------:|:------:|:------:|:------:|:------:|:------:|:------:|
-|n°1|agenda|derecho|social|año|acordar|violencia|
-|n°2|humano|derecho|derecho humano|respetar|querer|personar|
-|n°3|salud|problema|esperar|medicamento|mejor|enfermedad|
-|n°4|mayor|pensionar|adulto|adulto mayor|mejorar|reformar|
-|n°5|querer|día|vida|carabinero|policía|cumplir|
-|n°6|derecho|constitución|principiar|acordar|oportunidad|político|
-|n°7|aguar|querer|utilizar|mejor|enfrentar|gran|
+|:------:| :------:|:------:|:------:|:------:|:------:|:------:|
+|n°1|agenda|derecho|social|año|acordar|violencia
+|n°2|humano|derecho|derecho humano|respetar|querer|personar
+|n°3|salud|problema|esperar|medicamento|mejor|enfermedad
+|n°4|mayor|pensionar|adulto|adulto mayor|mejorar|reformar
+|n°5|querer|día|vida|carabinero|policía|cumplir
+|n°6|derecho|constitución|principiar|acordar|oportunidad|político
+|n°7|aguar|querer|utilizar|mejor|enfrentar|gran
 
 Ahora si vemos mucha mas coherencia en todos los casos, en comparación con lo entregado por los modelos con LDA. En particular el que tiene  7 tópicos parece ser es mas preciso en separar los distintos temas que existen en los discursos analizados.
 
