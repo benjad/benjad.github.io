@@ -9,7 +9,7 @@ Por lo anterior, me pareció interesante aplicar  Latent Dirichlet Allocation (L
 
 ## Recopilación de datos
 
-Los textos los obtuve desde las transcripciones automáticas de [Youtube](http://www.youtube.com), en los vídeos de los discursos. También elegí seleccionar solo los vídeos provenientes de los canales abiertos de televisión y con una duración mínima de 3 minutos, para así evitar  las "cuñas" y solo dejar los mas relevantes. 
+Los textos los obtuve desde las transcripciones automáticas de [Youtube](http://www.youtube.com), en los vídeos de los discursos. También elegí seleccionar solo los vídeos provenientes de los canales  de televisión abierta y con una duración mínima de 3 minutos, para así evitar  las "cuñas" y solo dejar los más relevantes. 
 
 
 El listado utilizado es el siguiente:
