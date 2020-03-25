@@ -272,6 +272,7 @@ from sklearn.decomposition import NMF
 
 # Non-negative matrix factorization model
 def NMF_model(texts,topics):
+    text = normalize(texts, norm='l1', axis=1)                 
     NMF_model = NMF(n_components=topics, init='nndsvd');
     #fit the model
     NMF_model.fit(texts)
