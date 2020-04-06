@@ -99,7 +99,7 @@ df.to_csv('sentences.csv')
 {% endhighlight %}
 
 
-##Generador de poemas
+## Generador de poemas
 
 El generador de poemas toma el archivo *.csv* del paso anterior, una palabra inicial y el numero de versos como input.
 
@@ -163,7 +163,7 @@ def poem_generator(file, word, n_sents=4):
 poem = poem_generator(file='sentences.csv',word='sueño')
 {% endhighlight  %}
 
-##Formato del poema
+## Formato del poema
 Para darle un mejor formato al poema resultante pase mayúscula la primera palabra  y también agregue un punto al final. 
 
 {% highlight python %} 
@@ -177,7 +177,7 @@ final_poem = format_poem(poem)
 print(final_poem)
 {% endhighlight  %}
 
-##Resultados
+## Resultados
 Yo elegí generar poemas con 4 versos, para disminuir la posibilitad de que estos no tuvieran sentido.
 
 Estos son algunos de los resultados que a mi más me gustaron:
