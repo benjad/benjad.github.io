@@ -103,7 +103,7 @@ df.to_csv('sentences.csv')
 
 El generador de poemas toma el archivo *.csv* del paso anterior, una palabra inicial y el numero de versos como input.
 
-Con la palabra inicial se inicia el proceso, por lo que idealmente esta debería ser un término amplio para que el calculo de similitud recomiendas
+Con la palabra inicial se inicia el proceso, por lo que idealmente esta debería ser un término amplio para aumentar la posibilidad de encontrar un verso con alta similitud.
 
 El cálculo de similitud se hace con la librería [spaCy](https://spacy.io/), que cuenta con un modelo en español que incluye los vectores del [*Word Embedding*](https://es.wikipedia.org/wiki/Word_embedding).
 
