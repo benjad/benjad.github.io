@@ -22,6 +22,7 @@ El código es el siguiente:
 
 import urllib.request
 from bs4 import BeautifulSoup
+import pandas as pd
 
 #this trick the server to dont reject the connection
 class AppURLopener(urllib.request.FancyURLopener): 
@@ -65,6 +66,7 @@ En relación a la limpieza, corregí algunos caracteres que se encontraban erró
 {% highlight python %} 
 import os
 import re
+import pandas as pd
 
 #function to split and clean the poems
 def docs_to_sentences(file, split):
@@ -108,8 +110,6 @@ Con la palabra inicial se inicia el proceso, por lo que idealmente esta debería
 El cálculo de similitud se hace con la librería [spaCy](https://spacy.io/), que cuenta con un modelo en español que incluye los vectores del [*Word Embedding*](https://es.wikipedia.org/wiki/Word_embedding).
 
 Para realizar la selección aleatoria elegí tomar un numero de 30 frases o versos y también verifiqué que estos no fueran del mismo poema que el verso anterior. El código es el siguiente:
-
-
 
 
 
