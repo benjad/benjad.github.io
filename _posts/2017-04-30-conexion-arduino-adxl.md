@@ -16,7 +16,7 @@ El diagrama de conexión con el [Arduino](http://www.arduino.cc) Uno es el sigui
 Las conexiones son simples y lo único que merece explicación es el enlace del pin AREF con el   de 3.3V. Este es el voltaje máximo de referencia al hacer la conversión de análogo a digital que debe hacer el  [Arduino](http://www.arduino.cc) Uno. Al tener un rango de 10bit, cuando al acelerómetro envié 3.3V se nos devolverá el valor de 1023 y cuando sea 0V el valor de 0.
 
 
-##El codigo
+## El codigo
 El código se encarga de hacer la lectura análoga de los 3 ejes en los pines A1, A2 Y A3. Con estos valores se hace la conversión a G (aceleración de gravedad) y luego envía esos datos a través del puerto serial.
 
 
