@@ -6,7 +6,7 @@ description: conectar arduino inalámbricamente con apc220
 ---
  
 
-Buscando una forma inalámbrica de conectar  un [Arduino](http://www.arduino.cc) Uno con el PC encontré los APC220 que con una distancia de 1000 mts y por un valor de USD$30 en [DealExtreme](http://www.dx.com), parecían tener la mejor relación rango de alcance/precio.
+Buscando una forma inalámbrica de conectar  un [Arduino](http://www.arduino.cc) Uno con el PC encontré los APC220 que con una distancia de 1000 mts y por un valor de USD$30 en [DealExtreme](http://www.dx.com), parecían tener la mejor relación de alcance/precio.
 
 ![apc220](/assets/apc220.JPG)
 
@@ -15,7 +15,7 @@ La configuración es sencilla y se realiza con el programa [rfmagic](http://www.
 
 ![rfmagic](/assets/rfmagic.JPG)
 
-Se deben conectar los APC220 al PC y verificar que todos los valores sean iguales en los 2 módulos con la excepción del **NODE ID** , que es el id individual de cada APC220.
+Se deben conectar los APC220 al PC y verificar que todos los valores sean iguales en los 2 módulos con la excepción del **NODE ID**, que es el id individual de cada APC220.
  
  
 
