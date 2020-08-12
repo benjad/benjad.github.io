@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Análisis de sentimiento utilizando  BERT en español
+title: Análisis de sentimientos utilizando  BERT en español
 comments: true
 description: clasificador sentimiento de reviews con BERT español
 ---
 
-A pesar de que el análisis/estudio de sentimientos no es algo nuevo, se hace difícil encontrar ejemplos utilizando el modelo BERT  en español. Por esa razón, me pareció interesante realizar este análisis y ver su comportamiento en comparación con modelos mucho más simples. Para esto último, decidí usar Naive Bayes para crear un modelo base, que servirá de referencia para evaluar los resultados.
+A pesar de que el análisis de sentimientos no es algo nuevo, se hace difícil encontrar ejemplos utilizando el modelo BERT en español. Por esa razón, me pareció interesante realizar este análisis y ver su comportamiento en comparación con modelos mucho más simples. Para esto último, decidí usar Naive Bayes para crear un modelo base, que servirá de referencia para evaluar los resultados.
 
 ## ¿Que es BERT?
 BERT  es un modelo de deep learning del lenguaje natural creado por Google. Si te interesa conocer su arquitectura en más detalle te recomiendo leer [este post](https://jalammar.github.io/illustrated-bert/), que posee una excelente explicación. 
