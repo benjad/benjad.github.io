@@ -167,6 +167,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import plot_confusion_matrix
 
 
 #function that create and fit the naive bayes model
