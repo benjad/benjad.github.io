@@ -265,10 +265,10 @@ def preprocessing(dataset):
         encoded_doc = tokenizer.encode_plus(doc,
                    add_special_tokens=True, max_length=115,
                    truncation=True,pad_to_max_length=True)
-                   input_ids.append(encoded_doc['input_ids'])
+        input_ids.append(encoded_doc['input_ids'])
         attention_mask.append(encoded_doc['attention_mask'])
-    return torch.tensor(input_ids),
-           torch.tensor(attention_mask)
+    return (torch.tensor(input_ids),
+           torch.tensor(attention_mask))
 
 # Apply preprocessing to dataset
 X_train_inputs, X_train_masks = preprocessing(X_train)
@@ -289,7 +289,7 @@ batch_size = 32
 
 y_train_labels = torch.tensor(y_train.values)
 y_val_labels = torch.tensor(y_val.values)
-#y_test_labels = torch.tensor(y_test.values)
+
 
 def dataloader(x_inputs, x_masks, y_labels):
     data = TensorDataset(x_inputs, x_masks, y_labels)
