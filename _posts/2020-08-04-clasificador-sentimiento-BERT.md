@@ -213,7 +213,7 @@ Este modelo nos da una exactitud de **0.791** y la siguiente matriz de confusió
 Como se observa, la exactitud del modelo no es mala pero tiene un bajo desempeño a la hora de clasificar las opiniones del tipo *neutral*.
 
 # Modelo utilizando BETO
-El primer paso fue [descargar]('https://github.com/dccuchile/beto') el modelo preentrenado para [PyTorch](https://pytorch.org/) . También empleé la librería *transformers* de [hugginfface](https://huggingface.co/transformers/) que posee  un modelo BERT predefinido para clasificación: *BertForSequenceClassification*. Este último no es mas que BERT con una capa de clasificación encima.
+El primer paso fue [descargar](https://github.com/dccuchile/beto) el modelo preentrenado para [PyTorch](https://pytorch.org/) . También empleé la librería *transformers* de [hugginfface](https://huggingface.co/transformers/) que posee  un modelo BERT predefinido para clasificación: *BertForSequenceClassification*. Este último no es mas que BERT con una capa de clasificación encima.
 
 Después de cargar los datos debemos tokenizar nuestro *dataset*. Este paso nos generará los vectores con los *tokens* y la *attention mask*. Debemos tener cuidado de que el valor de *max_length* sea mayor al número mayor de tokens por review.
 Este es el código: 
@@ -521,7 +521,7 @@ El modelo que da mejores resultados es con 3 epochs y un batch de 32. Este nos d
 ![matriz confusion](/assets/confmatrix2.png)
 
 ## Conclusiones
-A pesar de que con BERT obtenemos mejores resultados que en nuestro modelo de referencia, de igual manera tiene problemas en clasificar las opiniones del tipo neutral. Esto puede ser porque nuestro *dataset* no presenta muchos casos de esta categoría y también porque es una tarea difícil, incluso para una persona. Por ejemplo, de estas opiniones ¿cuáles uno calificaría como neutral? ( es solo una):
+A pesar de que con BERT obtenemos mejores resultados que en nuestro modelo de referencia, de igual manera tiene problemas en clasificar las opiniones del tipo neutral. Esto puede ser porque nuestro *dataset* no presenta muchos casos de esta categoría y también porque es una tarea difícil (incluso para una persona) y donde la capacidad de detectar contexto de BERT no parece ayudar demasiado . Por ejemplo, de estas opiniones ¿cuáles uno calificaría como neutral? ( es solo una):
 
 
 
