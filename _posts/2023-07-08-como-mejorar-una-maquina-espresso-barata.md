@@ -14,11 +14,57 @@ Hace varios años me compre una máquina de espresso bien económica (costó uno
 Para verificar esto se me ocurrió conectarle un sensor de temperatura directamente al hervidor y con una placa Arduino Uno medir la variación de temperatura en el tiempo. El sensor exacto que ocupe es el DS18B20 y también se necesita una resistencia de 500k ohm. El diagrama de conexión es el siguiente:
 
 ![diagrama arduino](/assets/diag1.png)
-
+<br> 
 Bueno y asi se ve el sensor instalado, pegado al hervidor:
 ![sensor instalado](/assets/sensor_en_termo.png)
+<br> 
+Acá está el código para que muestre la lectura de temperatura en el monitor serial:
 
+{% highlight arduino  %}
 
+    /* DS18B20 1-Wire digital temperature sensor with Arduino example code. More info: https://www.makerguides.com */
+
+    // Include the required Arduino libraries:
+    #include <OneWire.h>
+    #include <DallasTemperature.h>
+
+    // Define to which pin of the Arduino the 1-Wire bus is connected:
+    #define ONE_WIRE_BUS 9
+
+    // Create a new instance of the oneWire class to communicate with any OneWire device:
+    OneWire oneWire(ONE_WIRE_BUS);
+
+    // Pass the oneWire reference to DallasTemperature library:
+    DallasTemperature sensors(&oneWire);
+
+    void setup() {
+    // Begin serial communication at a baud rate of 9600:
+    Serial.begin(9600);
+    // Start up the library:
+    sensors.begin();
+    }
+
+    void loop() {
+    // Send the command for all devices on the bus to perform a temperature conversion:
+    sensors.requestTemperatures();
+
+    // Fetch the temperature in degrees Celsius for device index:
+    float tempC = sensors.getTempCByIndex(0); // the index 0 refers to the first device
+    // Fetch the temperature in degrees Fahrenheit for device index:
+
+    // Print the temperature in Celsius in the Serial Monitor:
+    Serial.print("Temperature: ");
+    Serial.print(tempC);
+    Serial.print(" \xC2\xB0"); // shows degree symbol
+    Serial.print("C  ");
+    Serial.println(" \n");
+
+    // Wait 1 second:
+    delay(1000);
+    }
+
+{% endhighlight %}
+<br> 
 Y si graficamos la variación en el tiempo, nos da esto:
 ![grafico temperatura vs tiempo](/assets/temp.png)
 
