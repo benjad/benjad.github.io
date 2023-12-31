@@ -50,7 +50,6 @@ Acá está el código para que muestre la lectura de temperatura en el monitor s
 
     // Fetch the temperature in degrees Celsius for device index:
     float tempC = sensors.getTempCByIndex(0); // the index 0 refers to the first device
-    // Fetch the temperature in degrees Fahrenheit for device index:
 
     // Print the temperature in Celsius in the Serial Monitor:
     Serial.print("Temperature: ");
