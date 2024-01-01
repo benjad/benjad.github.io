@@ -32,7 +32,7 @@ El relay se encargará de abrir y cerrar el circuito que enciende el termo y por
 ## Programar el controlador PID
 Ahora que tenemos como encender/apagar el termo y además podemos monitorear la temperatura, solo tenemos que programar el control PID.. ¿o no?
 Bueno después de realizar esta conexión me di cuenta que el control PID necesita que la señal de salida (en nuestro caso sería la potencia del termo) sea variable, pero para nuestro ejemplo solo podemos prender o apagar el termo a una potencia fija.
-###¿Entonces que hacemos?
+## ¿Entonces que hacemos?
 Para simplificar el problema implementaremos solo la P en PID, es decir solamente un control proporcional de la señal. Tambien para simular niveles de potencia se hara un encendido y apagado intermitente, creando dos niveles: 100% y 50%. Para que se entienda mejor, acá un grafico de ejemplo  con la señal tipo "cajón" que busca ser equivalente a una potencia del 50%:
 
 ![grafico simular señal](/assets/potencia_sim.JPG)
@@ -115,7 +115,7 @@ Acá está el código con la lógica implementada y además la impresión de la 
 
 
 ### Pensamientos finales
-Diría que la implementación final le queda un poco grande el nombre de "control proporcional", pero aun así es una mejora al termostato que tenía previamente. Una posible mejora es crear mas niveles de potencia para mejorar la proporcionalidad y que el ajuste sea más suave. Por ultimo quiero repetir que no pude implementar esta solución (porque ya no tengo la maquina), por lo que recomiendo ir ajustando 50_THRESHOLD y ver que valor logra una temperatura final mas estable.
+Diría que la implementación final le queda un poco grande el nombre de "control proporcional", pero aun así es mejor que el termostato que tenía previamente. Una posible mejora es crear mas niveles de potencia para mejorar la proporcionalidad y que el ajuste sea más suave. Por ultimo quiero repetir que no pude implementar esta solución (porque ya no tengo la maquina), por lo que recomiendo ir ajustando 50_THRESHOLD y ver que valor logra una temperatura final mas estable.
 
 Cualquier consulta o comentario más abajo!
 
